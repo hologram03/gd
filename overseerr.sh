@@ -47,7 +47,6 @@ function _overseer_install() {
     echo "Installing dependencies via yarn"
     # Ensure sqlite can build right in case it needs to use python
         
-    fi
     yarn install --cwd ~/overseerr >> "$log" 2>&1 || {
         echo "Failed to install dependencies"
         exit 1
